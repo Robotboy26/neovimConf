@@ -15,9 +15,9 @@ end
 -- Function to toggle shell window
 function toggle_shell(split_direction)
     if split_direction == "vsplit" then
-        vim.cmd(split_direction .. " | term")
+        vim.cmd(split_direction .. " | term zsh")
     else
-        vim.cmd("below new | term") -- if split put terminal at bottom
+        vim.cmd("below new | term zsh") -- if split put terminal at bottom
     end
     send_key_event('i') -- to put the terminal in input mode
 end
