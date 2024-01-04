@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
+
     use {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
@@ -37,13 +38,14 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
     use('ThePrimeagen/Vim-Be-Good')
 
-    -- colorscheme may change
+    use('shaunsingh/moonlight.nvim') -- main
+    require('moonlight').set()
+    vim.cmd('colorscheme moonlight')
+    -- backup
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
+		config = function() end
 	})
 
 	use {

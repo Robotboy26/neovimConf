@@ -1,2 +1,2 @@
-cp -r config old
-cp -r ~/.config/nvim config
+cp -r nvim/ old/
+cp -r ~/.config/nvim nvim/
