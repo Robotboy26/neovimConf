@@ -7,7 +7,7 @@ cp -r config/ ~/.config/nvim
 
 # download nerd font
 cd ~/
-git clone https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/0xProto.zip
+wget -O 0xProto.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/0xProto.zip
 unzip 0xProto.zip
 mv 0xProtoNerdFontMono-Regular.ttf ~/.fonts
 mv 0xProtoNerdFontPropo-Regular.ttf ~/.fonts
