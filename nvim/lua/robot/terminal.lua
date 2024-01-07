@@ -23,6 +23,6 @@ function toggle_shell(split_direction)
 end
 
 -- Open shell vertically
-vim.api.nvim_set_keymap('n', '<Leader>d', '<Cmd>lua toggle_shell("vsplit")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>f', '<Cmd>lua toggle_shell("vsplit")<CR>', { noremap = true, silent = true })
 -- Open shell horizontally
-vim.api.nvim_set_keymap('n', '<Leader>k', '<Cmd>lua toggle_shell("split")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>j', '<Cmd>lua toggle_shell("split")<CR>', { noremap = true, silent = true })
