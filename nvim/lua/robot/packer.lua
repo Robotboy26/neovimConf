@@ -34,6 +34,13 @@ return require('packer').startup(function(use)
 
     -- mabey at some point "ThePrimeagen/refactoring.nvim"
 
+    -- hopefully replaces netrw as file manager while being less intrusive
+    use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+
+
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
     use('ThePrimeagen/Vim-Be-Good')
