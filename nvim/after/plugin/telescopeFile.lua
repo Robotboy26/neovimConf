@@ -5,7 +5,7 @@ require("telescope").setup {
             theme = "ivy",
             -- disables netrw and use telescope-file-browser in its place
             -- do more keybind changes to fix more this more like net rw or perfered keybindings
-            hijack_netrw = false,
+            hijack_netrw = true,
             mappings = {
                 ["i"] = {
                     ["%"] = fbActions.create,
