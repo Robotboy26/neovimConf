@@ -5,22 +5,18 @@ require("telescope").setup {
             theme = "ivy",
             -- disables netrw and use telescope-file-browser in its place
             -- do more keybind changes to fix more this more like net rw or perfered keybindings
-            hijack_netrw = true,
+            hijack_netrw = false,
             mappings = {
                 ["i"] = {
                     ["%"] = fbActions.create,
-                    ["r"] = fbActions.rename,
-                    ["m"] = fbActions.move,
-                    ["c"] = fbActions.move,
-                    ["r"] = fbActions.remove,
                     -- your custom insert mode mappings
                 },
                 ["n"] = {
                     ["%"] = fbActions.create,
-                    ["r"] = fbActions.rename,
-                    ["m"] = fbActions.move,
-                    ["c"] = fbActions.move,
-                    ["r"] = fbActions.remove,
+                    -- ["r"] = fbActions.rename,
+                    -- ["m"] = fbActions.move,
+                    -- ["c"] = fbActions.move,
+                    -- ["r"] = fbActions.remove,
                     -- your custom normal mode mappings
                 },
             },
