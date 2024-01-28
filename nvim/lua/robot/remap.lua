@@ -31,6 +31,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- keymaps for telescope-file
-vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser<CR><esc>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser<CR>", { noremap = true })
 -- open file_browser with the path of the current buffer
-vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser path=%:p:h select_buffer=true<CR><esc>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", { noremap = true })
