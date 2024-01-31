@@ -34,3 +34,20 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser<CR>", { noremap = true })
 -- open file_browser with the path of the current buffer
 vim.api.nvim_set_keymap("n", "<space>pv", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", { noremap = true })
+
+-- thePrimeagen/refactoring.nvim
+
+vim.keymap.set({ "n", "x" }, "<leader>re", function() require('refactoring').refactor('Extract Function') end)
+vim.keymap.set({ "n", "x" }, "<leader>rf", function() require('refactoring').refactor('Extract Function To File') end)
+-- Extract function supports only visual mode
+vim.keymap.set({ "n", "x" }, "<leader>rv", function() require('refactoring').refactor('Extract Variable') end)
+-- Extract variable supports only visual mode
+vim.keymap.set({ "n", "x" }, "<leader>rI", function() require('refactoring').refactor('Inline Function') end)
+-- Inline func supports only normal
+vim.keymap.set({ "n", "x" }, "<leader>ri", function() require('refactoring').refactor('Inline Variable') end)
+-- Inline var supports both normal and visual mode
+
+vim.keymap.set({ "n", "x" }, "<leader>rb", function() require('refactoring').refactor('Extract Block') end)
+vim.keymap.set({ "n", "x" }, "<leader>rbf", function() require('refactoring').refactor('Extract Block To File') end)
+vim.keymap.set({ "n", "x" }, "<leader>rr", function() require('telescope').extensions.refactoring.refactors() end)
+-- Extract block supports only normal mode

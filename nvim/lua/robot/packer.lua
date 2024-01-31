@@ -32,7 +32,13 @@ return require('packer').startup(function(use)
         requires = { {"nvim-lua/plenary.nvim"} }
     }
 
-    -- mabey at some point "ThePrimeagen/refactoring.nvim"
+    use {
+        "ThePrimeagen/refactoring.nvim",
+        requires = {
+            {"nvim-lua/plenary.nvim"},
+            {"nvim-treesitter/nvim-treesitter"}
+        }
+    }
 
     -- hopefully replaces netrw as file manager while being less intrusive
     use {
