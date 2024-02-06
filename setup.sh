@@ -7,9 +7,7 @@ cp -r nvim ~/.config/
 
 # download nerd font
 cd ~/
-wget -O 0xProto.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/0xProto.zip
-unzip 0xProto.zip
-mv 0xProtoNerdFontMono-Regular.ttf ~/.fonts
-mv 0xProtoNerdFontPropo-Regular.ttf ~/.fonts
-mv 0xProtoNerdFont-Regular.ttf ~/.fonts
-rm 0xProto.zip
+wget -O Agave.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Agave.zip
+unzip Agave.zip
+mv *.ttf ~/fonts
+rm Agave.zip

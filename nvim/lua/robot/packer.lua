@@ -41,11 +41,7 @@ return require('packer').startup(function(use)
     }
 
     -- hopefully replaces netrw as file manager while being less intrusive
-    use {
-    "nvim-telescope/telescope-file-browser.nvim",
-    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-    }
-
+    -- lets just keep netrw (it works well (you should use fuzzy finder anyway))
 
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
