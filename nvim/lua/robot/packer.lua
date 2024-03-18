@@ -48,8 +48,6 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/Vim-Be-Good')
 
     use('shaunsingh/moonlight.nvim') -- main
-    require('moonlight').set()
-    vim.cmd('colorscheme moonlight')
     -- backup
 	use({
 		'rose-pine/neovim',
